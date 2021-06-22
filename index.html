@@ -1,0 +1,32 @@
+<html><center><head><title>Family Book</title></head>
+    <h1>Family Book</h1>
+    <body>
+        <script>
+            var images=["https://lh3.googleusercontent.com/proxy/Ec0dJKkMQPiASVp1deCSn-T7PLqrghCbxgHJuI724JveE3dYZdFulrAWCtoWO7RC_m5gjZ482apiK93v9elbzwjn","https://img2.pngio.com/pretty-girl-clipart-png-brown-hair-girl-cartoon-png-624_625.jpg","https://freepikpsd.com/media/2019/10/mom-clipart-png-3.png","https://previews.123rf.com/images/jemastock/jemastock2005/jemastock200505430/147682761-happy-young-boy-teenager-character-vector-illustration-design.jpg","https://image.shutterstock.com/image-vector/cute-kid-teen-boy-show-260nw-1509139481.jpg","https://image.shutterstock.com/image-vector/illustration-featuring-male-businessman-wearing-260nw-234744016.jpg","https://thumbs.dreamstime.com/b/very-cute-old-grandma-pink-dress-digital-illustration-159038923.jpg","https://us.123rf.com/450wm/natoushe/natoushe1702/natoushe170200033/72787190-portrait-of-grandfather.jpg?ver=6","https://us.123rf.com/450wm/kinokotagawa/kinokotagawa1803/kinokotagawa180300299/97317255-a-middle-aged-housewife-wearing-an-apron-is-spreading-her-hands.jpg?ver=6","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_otz7hkFnXvju7djdQKMUqHs-ref1XNCV6A&usqp=CAU","https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/38710/wheelchair-woman-girl-clipart-xl.png","https://i.pinimg.com/736x/8d/03/5c/8d035cae830fe23606c90cd2b2f4cd02.jpg"]
+            var names=["Elder sister","Younger sister","Mom","Elder brother","Younger brother","Dad","Grandma","Grandpa","Aunt","Uncle","Cousin","Pet"]
+            var i =0
+            function update (){
+        i++;
+        var numberofpeopleinarray=12
+        if(i > numberofpeopleinarray)
+        {
+        i=0;
+            }
+        var updateimage=images[i]
+        var nameupdate=names[i]
+        document.getElementById("images").src=updateimage;
+        document.getElementById("family_names").innerHTML=nameupdate;
+            }
+            
+        
+        
+            </script>
+            <img id="images"src="https://lh3.googleusercontent.com/proxy/Ec0dJKkMQPiASVp1deCSn-T7PLqrghCbxgHJuI724JveE3dYZdFulrAWCtoWO7RC_m5gjZ482apiK93v9elbzwjn" style="width: 30%;height:70%;"></body>
+           <h4 id ="family_names">Elder sister</h4>
+           <button onclick="update();">Next</button>
+            </body>
+            
+    
+    </center>
+    
+    </html>
